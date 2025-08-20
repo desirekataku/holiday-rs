@@ -1,0 +1,19 @@
+[package]
+name = "holiday-rs"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Lightweight holiday and business-day calculations (MVP: FR)"
+repository = "https://github.com/desirekataku/holiday-rs"
+documentation = "https://docs.rs/holiday-rs"
+readme = "README.md"
+keywords = ["holiday", "calendar", "business-day", "france", "rust"]
+categories = ["date-and-time", "api-bindings"]
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+csv = "1"
+
+[dev-dependencies]
